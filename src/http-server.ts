@@ -19,7 +19,7 @@ import { handleGetCropDetails } from './tools/get-crop-details.js';
 import { handleGetCommodityPrice } from './tools/get-commodity-price.js';
 import { handleCalculateMargin } from './tools/calculate-margin.js';
 
-const SERVER_NAME = 'crop-nutrients-mcp';
+const SERVER_NAME = 'uk-crop-nutrients-mcp';
 const SERVER_VERSION = '0.1.0';
 const PORT = parseInt(process.env.PORT ?? '3000', 10);
 

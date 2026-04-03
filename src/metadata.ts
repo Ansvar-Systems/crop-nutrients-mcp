@@ -19,7 +19,7 @@ export function buildMeta(overrides?: Partial<Meta>): Meta {
     data_age: overrides?.data_age ?? 'unknown',
     source_url: overrides?.source_url ?? 'https://ahdb.org.uk/nutrient-management-guide',
     copyright: 'Data: Crown Copyright and AHDB. Server: Apache-2.0 Ansvar Systems.',
-    server: 'crop-nutrients-mcp',
+    server: 'uk-crop-nutrients-mcp',
     version: '0.1.0',
     ...overrides,
   };

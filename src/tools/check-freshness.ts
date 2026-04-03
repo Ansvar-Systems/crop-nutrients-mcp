@@ -36,7 +36,7 @@ export function handleCheckFreshness(db: Database): FreshnessResult {
     schema_version: schemaVersion?.value ?? null,
     days_since_ingest: daysSinceIngest,
     staleness_threshold_days: STALENESS_THRESHOLD_DAYS,
-    refresh_command: 'gh workflow run ingest.yml -R ansvar-systems/crop-nutrients-mcp',
+    refresh_command: 'gh workflow run ingest.yml -R ansvar-systems/uk-crop-nutrients-mcp',
     _meta: buildMeta(),
   };
 }

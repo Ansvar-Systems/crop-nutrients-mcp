@@ -1,5 +1,5 @@
 /**
- * Crop Nutrients MCP — Data Ingestion Script
+ * UK Crop Nutrients MCP — Data Ingestion Script
  *
  * Sources:
  * 1. AHDB RB209 Nutrient Management Guide (10th Edition) — reference tables encoded below
@@ -360,7 +360,7 @@ function ingest(db: Database): void {
 
   // Write coverage.json
   const coverage = {
-    mcp_name: 'Crop Nutrients MCP',
+    mcp_name: 'UK Crop Nutrients MCP',
     jurisdiction: 'GB',
     build_date: now,
     crops: CROPS.length,

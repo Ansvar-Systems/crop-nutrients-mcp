@@ -18,7 +18,7 @@ const lastIngest = db.get<{ value: string }>('SELECT value FROM db_metadata WHER
 db.close();
 
 const coverage = {
-  mcp_name: 'Crop Nutrients MCP',
+  mcp_name: 'UK Crop Nutrients MCP',
   jurisdiction: 'GB',
   build_date: lastIngest?.value ?? new Date().toISOString().split('T')[0],
   crops,

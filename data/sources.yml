@@ -1,5 +1,5 @@
 schema_version: "1.0"
-mcp_name: "Crop Nutrients MCP"
+mcp_name: "UK Crop Nutrients MCP"
 category: "domain_intelligence"
 
 sources:

@@ -3,7 +3,7 @@ import { SUPPORTED_JURISDICTIONS } from '../jurisdiction.js';
 
 export function handleAbout() {
   return {
-    name: 'Crop Nutrients MCP',
+    name: 'UK Crop Nutrients MCP',
     description:
       'UK crop nutrient recommendations based on AHDB RB209. Provides NPK planning, ' +
       'soil classification, crop requirements, and commodity pricing for agricultural decision-making.',
@@ -13,7 +13,7 @@ export function handleAbout() {
     tools_count: 10,
     links: {
       homepage: 'https://ansvar.eu/open-agriculture',
-      repository: 'https://github.com/ansvar-systems/crop-nutrients-mcp',
+      repository: 'https://github.com/ansvar-systems/uk-crop-nutrients-mcp',
       mcp_network: 'https://ansvar.ai/mcp',
     },
     _meta: buildMeta(),

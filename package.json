@@ -1,11 +1,11 @@
 {
-  "name": "@ansvar/crop-nutrients-mcp",
+  "name": "@ansvar/uk-crop-nutrients-mcp",
   "version": "0.1.0",
   "description": "UK crop nutrient recommendations via MCP -- RB209 data, soil types, NPK planning, commodity prices",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "crop-nutrients-mcp": "dist/server.js"
+    "uk-crop-nutrients-mcp": "dist/server.js"
   },
   "scripts": {
     "build": "tsc",
@@ -27,7 +27,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansvar-systems/crop-nutrients-mcp"
+    "url": "https://github.com/ansvar-systems/uk-crop-nutrients-mcp"
   },
   "homepage": "https://ansvar.eu/open-agriculture",
   "engines": {

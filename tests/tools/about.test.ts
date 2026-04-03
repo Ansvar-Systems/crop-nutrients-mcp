@@ -4,7 +4,7 @@ import { handleAbout } from '../../src/tools/about.js';
 describe('about tool', () => {
   test('returns server metadata', () => {
     const result = handleAbout();
-    expect(result.name).toBe('Crop Nutrients MCP');
+    expect(result.name).toBe('UK Crop Nutrients MCP');
     expect(result.description).toContain('nutrient');
     expect(result.jurisdiction).toEqual(['GB']);
     expect(result.tools_count).toBeGreaterThan(0);

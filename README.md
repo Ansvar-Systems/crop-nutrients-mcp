@@ -1,7 +1,7 @@
-# Crop Nutrients MCP
+# UK Crop Nutrients MCP
 
-[![CI](https://github.com/ansvar-systems/crop-nutrients-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/ansvar-systems/crop-nutrients-mcp/actions/workflows/ci.yml)
-[![GHCR](https://github.com/ansvar-systems/crop-nutrients-mcp/actions/workflows/ghcr-build.yml/badge.svg)](https://github.com/ansvar-systems/crop-nutrients-mcp/actions/workflows/ghcr-build.yml)
+[![CI](https://github.com/ansvar-systems/uk-crop-nutrients-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/ansvar-systems/uk-crop-nutrients-mcp/actions/workflows/ci.yml)
+[![GHCR](https://github.com/ansvar-systems/uk-crop-nutrients-mcp/actions/workflows/ghcr-build.yml/badge.svg)](https://github.com/ansvar-systems/uk-crop-nutrients-mcp/actions/workflows/ghcr-build.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 UK crop nutrient recommendations via the [Model Context Protocol](https://modelcontextprotocol.io). Query AHDB RB209 data, soil types, NPK planning, and commodity prices -- all from your AI assistant.
@@ -21,9 +21,9 @@ Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "crop-nutrients": {
+    "uk-crop-nutrients": {
       "command": "npx",
-      "args": ["-y", "@ansvar/crop-nutrients-mcp"]
+      "args": ["-y", "@ansvar/uk-crop-nutrients-mcp"]
     }
   }
 }
@@ -32,25 +32,25 @@ Add to `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add crop-nutrients npx @ansvar/crop-nutrients-mcp
+claude mcp add uk-crop-nutrients npx @ansvar/uk-crop-nutrients-mcp
 ```
 
 ### Streamable HTTP (remote)
 
 ```
-https://mcp.ansvar.eu/crop-nutrients/mcp
+https://mcp.ansvar.eu/uk-crop-nutrients/mcp
 ```
 
 ### Docker (self-hosted)
 
 ```bash
-docker run -p 3000:3000 ghcr.io/ansvar-systems/crop-nutrients-mcp:latest
+docker run -p 3000:3000 ghcr.io/ansvar-systems/uk-crop-nutrients-mcp:latest
 ```
 
 ### npm (stdio)
 
 ```bash
-npx @ansvar/crop-nutrients-mcp
+npx @ansvar/uk-crop-nutrients-mcp
 ```
 
 ## Example Queries
