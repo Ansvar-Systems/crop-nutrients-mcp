@@ -10,7 +10,7 @@ export function handleAbout() {
     version: '0.1.0',
     jurisdiction: [...SUPPORTED_JURISDICTIONS],
     data_sources: ['AHDB RB209', 'DEFRA Agricultural Price Indices', 'AHDB Market Data'],
-    tools_count: 11,
+    tools_count: 10,
     links: {
       homepage: 'https://ansvar.eu/open-agriculture',
       repository: 'https://github.com/ansvar-systems/crop-nutrients-mcp',

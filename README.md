@@ -67,7 +67,7 @@ Ask your AI assistant:
 
 | Metric | Value |
 |--------|-------|
-| Tools | 11 (3 meta + 8 domain) |
+| Tools | 10 (3 meta + 7 domain) |
 | Jurisdiction | GB |
 | Data sources | AHDB RB209, DEFRA Price Indices, AHDB Market Data |
 | License (data) | Open Government Licence v3 |
