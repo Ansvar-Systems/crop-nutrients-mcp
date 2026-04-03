@@ -57,6 +57,36 @@ const CROPS = [
   { id: 'carrots', name: 'Carrots', crop_group: 'vegetables', typical_yield_t_ha: 50.0, n: 80, p: 50, k: 200, stages: ['emergence', 'canopy', 'root bulking', 'harvest'] },
   { id: 'onions', name: 'Onions', crop_group: 'vegetables', typical_yield_t_ha: 45.0, n: 120, p: 55, k: 180, stages: ['emergence', 'bulb initiation', 'bulb swelling', 'harvest'] },
   { id: 'lettuce', name: 'Lettuce', crop_group: 'vegetables', typical_yield_t_ha: 30.0, n: 130, p: 45, k: 170, stages: ['transplant', 'vegetative', 'head formation', 'harvest'] },
+  // More Vegetables — RB209 Section 6
+  { id: 'brussels-sprouts', name: 'Brussels Sprouts', crop_group: 'vegetables', typical_yield_t_ha: 10.0, n: 270, p: 80, k: 220, stages: ['transplant', 'vegetative', 'button formation', 'harvest'] },
+  { id: 'leeks', name: 'Leeks', crop_group: 'vegetables', typical_yield_t_ha: 30.0, n: 160, p: 60, k: 180, stages: ['transplant', 'vegetative', 'shaft thickening', 'harvest'] },
+  { id: 'parsnips', name: 'Parsnips', crop_group: 'vegetables', typical_yield_t_ha: 35.0, n: 50, p: 45, k: 160, stages: ['emergence', 'canopy', 'root bulking', 'harvest'] },
+  { id: 'celery', name: 'Celery', crop_group: 'vegetables', typical_yield_t_ha: 50.0, n: 200, p: 65, k: 280, stages: ['transplant', 'vegetative', 'heart formation', 'harvest'] },
+  { id: 'beetroot', name: 'Beetroot (table)', crop_group: 'vegetables', typical_yield_t_ha: 30.0, n: 120, p: 50, k: 200, stages: ['emergence', 'canopy', 'root bulking', 'harvest'] },
+  { id: 'courgettes', name: 'Courgettes', crop_group: 'vegetables', typical_yield_t_ha: 25.0, n: 150, p: 55, k: 200, stages: ['transplant', 'vegetative', 'flowering', 'harvest'] },
+  { id: 'runner-beans', name: 'Runner Beans', crop_group: 'vegetables', typical_yield_t_ha: 15.0, n: 0, p: 40, k: 120, stages: ['emergence', 'vegetative', 'flowering', 'pod fill', 'harvest'] },
+  { id: 'sweetcorn', name: 'Sweetcorn', crop_group: 'vegetables', typical_yield_t_ha: 15.0, n: 150, p: 50, k: 130, stages: ['emergence', 'vegetative', 'tasseling', 'cob fill', 'harvest'] },
+  { id: 'asparagus', name: 'Asparagus', crop_group: 'vegetables', typical_yield_t_ha: 3.0, n: 100, p: 55, k: 130, stages: ['crown growth', 'spear harvest', 'fern growth', 'senescence'] },
+  { id: 'broad-beans-veg', name: 'Broad Beans (veg)', crop_group: 'vegetables', typical_yield_t_ha: 8.0, n: 0, p: 35, k: 60, stages: ['emergence', 'vegetative', 'flowering', 'pod fill', 'harvest'] },
+  // Fruit — RB209 Section 7
+  { id: 'dessert-apples', name: 'Dessert Apples', crop_group: 'fruit', typical_yield_t_ha: 25.0, n: 100, p: 30, k: 120, stages: ['bud burst', 'blossom', 'fruitlet', 'fruit development', 'harvest'] },
+  { id: 'culinary-apples', name: 'Culinary Apples', crop_group: 'fruit', typical_yield_t_ha: 30.0, n: 120, p: 35, k: 140, stages: ['bud burst', 'blossom', 'fruitlet', 'fruit development', 'harvest'] },
+  { id: 'pears', name: 'Pears', crop_group: 'fruit', typical_yield_t_ha: 20.0, n: 90, p: 28, k: 110, stages: ['bud burst', 'blossom', 'fruitlet', 'fruit development', 'harvest'] },
+  { id: 'plums', name: 'Plums', crop_group: 'fruit', typical_yield_t_ha: 12.0, n: 80, p: 25, k: 100, stages: ['bud burst', 'blossom', 'fruit set', 'fruit development', 'harvest'] },
+  { id: 'strawberries', name: 'Strawberries', crop_group: 'fruit', typical_yield_t_ha: 15.0, n: 100, p: 30, k: 150, stages: ['runner establishment', 'crown development', 'flowering', 'fruiting', 'harvest'] },
+  { id: 'raspberries', name: 'Raspberries', crop_group: 'fruit', typical_yield_t_ha: 8.0, n: 80, p: 25, k: 100, stages: ['cane emergence', 'vegetative', 'flowering', 'fruiting', 'harvest'] },
+  { id: 'blackcurrants', name: 'Blackcurrants', crop_group: 'fruit', typical_yield_t_ha: 5.0, n: 100, p: 30, k: 90, stages: ['bud burst', 'flowering', 'fruit set', 'fruit development', 'harvest'] },
+  { id: 'wine-grapes', name: 'Wine Grapes', crop_group: 'fruit', typical_yield_t_ha: 6.0, n: 50, p: 20, k: 80, stages: ['bud break', 'flowering', 'fruit set', 'veraison', 'harvest'] },
+  { id: 'hops', name: 'Hops', crop_group: 'fruit', typical_yield_t_ha: 1.8, n: 150, p: 45, k: 120, stages: ['emergence', 'training', 'vegetative', 'flowering', 'cone development', 'harvest'] },
+  { id: 'cider-apples', name: 'Cider Apples', crop_group: 'fruit', typical_yield_t_ha: 20.0, n: 80, p: 25, k: 100, stages: ['bud burst', 'blossom', 'fruitlet', 'fruit development', 'harvest'] },
+  // Biomass/Energy — RB209 Section 4
+  { id: 'miscanthus', name: 'Miscanthus', crop_group: 'biomass', typical_yield_t_ha: 12.0, n: 40, p: 10, k: 60, stages: ['spring emergence', 'stem elongation', 'flowering', 'senescence'] },
+  { id: 'short-rotation-coppice', name: 'Short Rotation Coppice (willow)', crop_group: 'biomass', typical_yield_t_ha: 10.0, n: 60, p: 15, k: 40, stages: ['bud burst', 'shoot growth', 'canopy closure', 'leaf fall', 'harvest'] },
+  // Specialist Forage
+  { id: 'red-clover', name: 'Red Clover', crop_group: 'forage', typical_yield_t_ha: 8.0, n: 0, p: 50, k: 170, stages: ['spring growth', 'first cut', 'regrowth', 'second cut'] },
+  { id: 'sainfoin', name: 'Sainfoin', crop_group: 'forage', typical_yield_t_ha: 6.0, n: 0, p: 40, k: 140, stages: ['spring growth', 'first cut', 'regrowth', 'second cut'] },
+  { id: 'chicory', name: 'Chicory', crop_group: 'forage', typical_yield_t_ha: 7.0, n: 100, p: 35, k: 130, stages: ['spring growth', 'first cut', 'regrowth', 'second cut', 'autumn'] },
+  { id: 'plantain-herb', name: 'Plantain (herb)', crop_group: 'forage', typical_yield_t_ha: 6.0, n: 80, p: 30, k: 120, stages: ['spring growth', 'first cut', 'regrowth', 'second cut', 'autumn'] },
 ];
 
 // ── RB209 Soil Types ─────────────────────────────────────────────
@@ -146,6 +176,36 @@ const CROP_PARAMS: CropParams[] = [
   { id: 'carrots',                base_n: 130, n_step: 18, sg1_offset: -10, sg3_offset: 5,  p: [60, 50, 42], k: [220, 200, 175], s: 15, section: 'Section 6', is_pulse: false, is_osr: false },
   { id: 'onions',                 base_n: 160, n_step: 22, sg1_offset: -15, sg3_offset: 10, p: [65, 55, 45], k: [200, 180, 155], s: 20, section: 'Section 6', is_pulse: false, is_osr: false },
   { id: 'lettuce',                base_n: 180, n_step: 25, sg1_offset: -15, sg3_offset: 10, p: [50, 45, 38], k: [190, 170, 150], s: 20, section: 'Section 6', is_pulse: false, is_osr: false },
+  // More Vegetables — RB209 Section 6
+  { id: 'brussels-sprouts',      base_n: 320, n_step: 38, sg1_offset: -20, sg3_offset: 15, p: [90, 80, 68], k: [240, 220, 190], s: 45, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'leeks',                 base_n: 200, n_step: 25, sg1_offset: -15, sg3_offset: 10, p: [70, 60, 50], k: [200, 180, 155], s: 25, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'parsnips',              base_n: 100, n_step: 15, sg1_offset: -10, sg3_offset: 5,  p: [55, 45, 38], k: [180, 160, 140], s: 15, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'celery',                base_n: 250, n_step: 30, sg1_offset: -15, sg3_offset: 10, p: [75, 65, 55], k: [300, 280, 250], s: 35, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'beetroot',              base_n: 160, n_step: 22, sg1_offset: -10, sg3_offset: 5,  p: [60, 50, 42], k: [220, 200, 175], s: 20, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'courgettes',            base_n: 190, n_step: 25, sg1_offset: -15, sg3_offset: 10, p: [65, 55, 45], k: [220, 200, 175], s: 25, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'runner-beans',          base_n: 0,   n_step: 0,  sg1_offset: 0,   sg3_offset: 0,  p: [48, 40, 34], k: [140, 120, 100], s: 0,  section: 'Section 6', is_pulse: true,  is_osr: false },
+  { id: 'sweetcorn',             base_n: 190, n_step: 25, sg1_offset: -15, sg3_offset: 10, p: [60, 50, 42], k: [150, 130, 110], s: 20, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'asparagus',             base_n: 150, n_step: 20, sg1_offset: -10, sg3_offset: 5,  p: [65, 55, 48], k: [150, 130, 110], s: 20, section: 'Section 6', is_pulse: false, is_osr: false },
+  { id: 'broad-beans-veg',       base_n: 0,   n_step: 0,  sg1_offset: 0,   sg3_offset: 0,  p: [42, 35, 28], k: [72, 60, 50],   s: 0,  section: 'Section 6', is_pulse: true,  is_osr: false },
+  // Fruit — RB209 Section 7
+  { id: 'dessert-apples',        base_n: 140, n_step: 18, sg1_offset: -10, sg3_offset: 5,  p: [35, 30, 25], k: [140, 120, 100], s: 15, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'culinary-apples',       base_n: 160, n_step: 20, sg1_offset: -10, sg3_offset: 5,  p: [40, 35, 28], k: [160, 140, 120], s: 15, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'pears',                 base_n: 130, n_step: 18, sg1_offset: -10, sg3_offset: 5,  p: [35, 28, 22], k: [130, 110, 95],  s: 12, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'plums',                 base_n: 120, n_step: 16, sg1_offset: -10, sg3_offset: 5,  p: [30, 25, 20], k: [120, 100, 85],  s: 10, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'strawberries',          base_n: 140, n_step: 18, sg1_offset: -10, sg3_offset: 5,  p: [38, 30, 25], k: [170, 150, 130], s: 15, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'raspberries',           base_n: 120, n_step: 16, sg1_offset: -10, sg3_offset: 5,  p: [30, 25, 20], k: [120, 100, 85],  s: 12, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'blackcurrants',         base_n: 140, n_step: 18, sg1_offset: -10, sg3_offset: 5,  p: [35, 30, 24], k: [110, 90, 75],   s: 12, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'wine-grapes',           base_n: 90,  n_step: 12, sg1_offset: -10, sg3_offset: 5,  p: [25, 20, 16], k: [95, 80, 68],    s: 10, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'hops',                  base_n: 200, n_step: 25, sg1_offset: -15, sg3_offset: 10, p: [55, 45, 38], k: [140, 120, 100], s: 30, section: 'Section 7', is_pulse: false, is_osr: false },
+  { id: 'cider-apples',          base_n: 120, n_step: 16, sg1_offset: -10, sg3_offset: 5,  p: [30, 25, 20], k: [120, 100, 85],  s: 12, section: 'Section 7', is_pulse: false, is_osr: false },
+  // Biomass/Energy — RB209 Section 4
+  { id: 'miscanthus',            base_n: 60,  n_step: 8,  sg1_offset: -5,  sg3_offset: 5,  p: [15, 10, 8],  k: [70, 60, 50],    s: 10, section: 'Section 4', is_pulse: false, is_osr: false },
+  { id: 'short-rotation-coppice', base_n: 80, n_step: 10, sg1_offset: -5,  sg3_offset: 5,  p: [20, 15, 12], k: [50, 40, 32],    s: 10, section: 'Section 4', is_pulse: false, is_osr: false },
+  // Specialist Forage
+  { id: 'red-clover',            base_n: 0,   n_step: 0,  sg1_offset: 0,   sg3_offset: 0,  p: [55, 50, 45], k: [190, 170, 150], s: 20, section: 'Section 3', is_pulse: true,  is_osr: false },
+  { id: 'sainfoin',              base_n: 0,   n_step: 0,  sg1_offset: 0,   sg3_offset: 0,  p: [48, 40, 35], k: [160, 140, 120], s: 15, section: 'Section 3', is_pulse: true,  is_osr: false },
+  { id: 'chicory',               base_n: 150, n_step: 20, sg1_offset: -10, sg3_offset: 5,  p: [42, 35, 28], k: [150, 130, 110], s: 20, section: 'Section 3', is_pulse: false, is_osr: false },
+  { id: 'plantain-herb',         base_n: 120, n_step: 16, sg1_offset: -10, sg3_offset: 5,  p: [38, 30, 25], k: [140, 120, 100], s: 15, section: 'Section 3', is_pulse: false, is_osr: false },
 ];
 
 const SOIL_GROUP_NAMES: Record<number, string> = { 1: 'light sand', 2: 'medium loam', 3: 'heavy clay' };
@@ -297,6 +357,36 @@ const COMMODITY_PRICES = [
   { crop_id: 'carrots', market: 'wholesale', price: 180.00, source: 'defra_api', published: '2026-03-01' },
   { crop_id: 'onions', market: 'wholesale', price: 200.00, source: 'defra_api', published: '2026-03-01' },
   { crop_id: 'lettuce', market: 'wholesale', price: 450.00, source: 'defra_api', published: '2026-03-01' },
+  // More Vegetables
+  { crop_id: 'brussels-sprouts', market: 'wholesale', price: 500.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'leeks', market: 'wholesale', price: 400.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'parsnips', market: 'wholesale', price: 300.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'celery', market: 'wholesale', price: 350.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'beetroot', market: 'wholesale', price: 250.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'courgettes', market: 'wholesale', price: 600.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'runner-beans', market: 'wholesale', price: 900.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'sweetcorn', market: 'wholesale', price: 350.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'asparagus', market: 'wholesale', price: 3500.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'broad-beans-veg', market: 'wholesale', price: 700.00, source: 'defra_api', published: '2026-03-01' },
+  // Fruit
+  { crop_id: 'dessert-apples', market: 'wholesale', price: 600.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'culinary-apples', market: 'wholesale', price: 400.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'pears', market: 'wholesale', price: 650.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'plums', market: 'wholesale', price: 800.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'strawberries', market: 'wholesale', price: 2500.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'raspberries', market: 'wholesale', price: 4000.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'blackcurrants', market: 'contract', price: 1800.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'wine-grapes', market: 'contract', price: 2000.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'hops', market: 'contract', price: 5000.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'cider-apples', market: 'contract', price: 150.00, source: 'defra_api', published: '2026-03-01' },
+  // Biomass/Energy
+  { crop_id: 'miscanthus', market: 'contract', price: 60.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'short-rotation-coppice', market: 'contract', price: 55.00, source: 'defra_api', published: '2026-03-01' },
+  // Specialist Forage
+  { crop_id: 'red-clover', market: 'silage', price: 38.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'sainfoin', market: 'hay', price: 130.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'chicory', market: 'standing', price: 450.00, source: 'defra_api', published: '2026-03-01' },
+  { crop_id: 'plantain-herb', market: 'standing', price: 400.00, source: 'defra_api', published: '2026-03-01' },
 ];
 
 // ── Ingestion ────────────────────────────────────────────────────
